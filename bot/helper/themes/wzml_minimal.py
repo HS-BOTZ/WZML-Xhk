@@ -136,26 +136,26 @@ class WZMLStyle:
     L_LOG_START =           "➲ <b><u>Leech Started :</u></b>\n┃\n┠ <b>User :</b> {mention} ( #ID{uid} )\n┖ <b>Source :</b> <a href='{msg_link}'>Click Here</a>"
 
     # async def onUploadComplete(): ---> tasks_listener.py
-    NAME =                  '<b><i>{Name}</i></b>\n┃\n'
-    SIZE =                  '┠ <b>Size: </b>{Size}\n'
-    ELAPSE =                '┠ <b>Elapsed: </b>{Time}\n'
-    MODE =                  '┠ <b>Mode: </b>{Mode}\n'
+    NAME =                  '<b><u>{Name}</u></b>\n\n'
+    SIZE =                  '<b>Size: </b>{Size}\n'
+    ELAPSE =                '<b>Elapsed: </b>{Time}\n'
+    MODE =                  '<b>Mode: </b>{Mode}\n'
 
     # ----- LEECH -------
-    L_TOTAL_FILES =         '┠ <b>Total Files: </b>{Files}\n'
-    L_CORRUPTED_FILES =     '┠ <b>Corrupted Files: </b>{Corrupt}\n'
-    L_CC =                  '┖ <b>By: </b>{Tag}\n\n'
-    PM_BOT_MSG =            '➲ <b><i>File(s) have been Sent above</i></b>'
-    L_BOT_MSG =             '➲ <b><i>File(s) have been Sent to Bot PM (Private)</i></b>'
-    L_LL_MSG =              '➲ <b><i>File(s) have been Sent. Access via Links...</i></b>\n'
+    L_TOTAL_FILES =         '<b>Total Files: </b>{Files}\n'
+    L_CORRUPTED_FILES =     '<b>Corrupted Files: </b>{Corrupt}\n'
+    L_CC =                  '<b>By: </b>{Tag}\n\n'
+    PM_BOT_MSG =            '<b>File(s) have been Sent above</i></b>'
+    L_BOT_MSG =             '<b>File(s) have been Sent to Bot PM (Private)</b>'
+    L_LL_MSG =              '<b>File(s) have been Sent. Access via Links...</b>\n'
     
     # ----- MIRROR -------
-    M_TYPE =                '┠ <b>Type: </b>{Mimetype}\n'
-    M_SUBFOLD =             '┠ <b>SubFolders: </b>{Folder}\n'
-    TOTAL_FILES =           '┠ <b>Files: </b>{Files}\n'
-    RCPATH =                '┠ <b>Path: </b><code>{RCpath}</code>\n'
-    M_CC =                  '┖ <b>By: </b>{Tag}\n\n'
-    M_BOT_MSG =             '➲ <b><i>Link(s) have been Sent to Bot PM (Private)</i></b>'
+    M_TYPE =                '<b>Type: </b>{Mimetype}\n'
+    M_SUBFOLD =             '<b>SubFolders: </b>{Folder}\n'
+    TOTAL_FILES =           '<b>Files: </b>{Files}\n'
+    RCPATH =                '<b>Path: </b><code>{RCpath}</code>\n'
+    M_CC =                  '<b>By: </b>{Tag}\n\n'
+    M_BOT_MSG =             '<b>Link(s) have been Sent to Bot PM (Private)</b>'
     # ----- BUTTONS -------
     CLOUD_LINK =      '☁️ Cloud Link'
     SAVE_MSG =        '📨 Save Message'
@@ -173,53 +173,53 @@ class WZMLStyle:
 
     # def get_readable_message(): ---> bot_utilis.py
     ####--------OVERALL MSG HEADER----------
-    STATUS_NAME =       '<b><i>{Name}</i></b>'
+    STATUS_NAME =       '<b><u>{Name}</u></b>'
 
     #####---------PROGRESSIVE STATUS-------
-    BAR =               '\n┃ {Bar}'
-    PROCESSED =         '\n┠ <b>Processed:</b> {Processed}'
-    STATUS =            '\n┠ <b>Status:</b> <a href="{Url}">{Status}</a>'
-    ETA =                                                ' | <b>ETA:</b> {Eta}'
-    SPEED =             '\n┠ <b>Speed:</b> {Speed}'
-    ELAPSED =                                     ' | <b>Elapsed:</b> {Elapsed}'
-    ENGINE =            '\n┠ <b>Engine:</b> {Engine}'
-    STA_MODE =          '\n┠ <b>Mode:</b> {Mode}'
-    SEEDERS =           '\n┠ <b>Seeders:</b> {Seeders} | '
-    LEECHERS =                                           '<b>Leechers:</b> {Leechers}'
+    BAR =               '\n{Bar}'
+    PROCESSED =         '\n<b>Processed:</b> {Processed}'
+    STATUS =            '\n<b>Status:</b> <a href="{Url}">{Status}</a>'
+    ETA =               '\n<b>ETA:</b> {Eta}'
+    SPEED =             '\n<b>Speed:</b> {Speed}'
+    ELAPSED =           '\n<b>Elapsed:</b> {Elapsed}'
+    ENGINE =            '\n<b>Engine:</b> {Engine}'
+    STA_MODE =          '\n<b>Mode:</b> {Mode}'
+    SEEDERS =           '\n<b>Seeders:</b> {Seeders}'
+    LEECHERS =          '\n<b>Leechers:</b> {Leechers}'
 
     ####--------SEEDING----------
-    SEED_SIZE =      '\n┠ <b>Size: </b>{Size}'
-    SEED_SPEED =     '\n┠ <b>Speed: </b> {Speed} | '
-    UPLOADED =                                     '<b>Uploaded: </b> {Upload}'
-    RATIO =          '\n┠ <b>Ratio: </b> {Ratio} | '
-    TIME =                                         '<b>Time: </b> {Time}'
-    SEED_ENGINE =    '\n┠ <b>Engine:</b> {Engine}'
+    SEED_SIZE =      '\n<b>Size: </b>{Size}'
+    SEED_SPEED =     '\n<b>Speed: </b> {Speed}'
+    UPLOADED =       '\n<b>Uploaded: </b> {Upload}'
+    RATIO =          '\n<b>Ratio: </b> {Ratio}'
+    TIME =           '\n<b>Time: </b> {Time}'
+    SEED_ENGINE =    '\n<b>Engine:</b> {Engine}'
 
     ####--------NON-PROGRESSIVE + NON SEEDING----------
-    STATUS_SIZE =    '\n┠ <b>Size: </b>{Size}'
-    NON_ENGINE =     '\n┠ <b>Engine:</b> {Engine}'
+    STATUS_SIZE =    '\n<b>Size: </b>{Size}'
+    NON_ENGINE =     '\n<b>Engine:</b> {Engine}'
 
     ####--------OVERALL MSG FOOTER----------
-    USER =              '\n┠ <b>User:</b> <code>{User}</code> | '
-    ID =                                                        '<b>ID:</b> <code>{Id}</code>'
-    BTSEL =          '\n┠ <b>Select:</b> {Btsel}'
-    CANCEL =         '\n┖ {Cancel}\n\n'
+    USER =           '\n<b>User:</b> <code>{User}</code>'
+    ID =             '\n<b>ID:</b> <code>{Id}</code>'
+    BTSEL =          '\n<b>Select:</b> {Btsel}'
+    CANCEL =         '\n<b>Cancel:</b>{Cancel}\n\n'
 
     ####------FOOTER--------
-    FOOTER = '⌬ <b><i>Bot Stats</i></b>\n'
-    TASKS =  '┠ <b>Tasks:</b> {Tasks}\n'
-    BOT_TASKS = '┠ <b>Tasks:</b> {Tasks}/{Ttask} | <b>AVL:</b> {Free}\n'
-    Cpu = '┠ <b>CPU:</b> {cpu}% | '
+    FOOTER = '<b>Bot Stats</b>\n'
+    TASKS =  '<b>Tasks:</b> {Tasks}\n'
+    BOT_TASKS = '<b>Tasks:</b> {Tasks}/{Ttask} | <b>AVL:</b> {Free}\n'
+    Cpu = '<b>CPU:</b> {cpu}% | '
     FREE =                      '<b>F:</b> {free} [{free_p}%]'
-    Ram = '\n┠ <b>RAM:</b> {ram}% | '
+    Ram = '\n<b>RAM:</b> {ram}% | '
     uptime =                     '<b>UPTIME:</b> {uptime}'
-    DL = '\n┖ <b>DL:</b> {DL}/s | '
+    DL = '\n<b>DL:</b> {DL}/s | '
     UL =                        '<b>UL:</b> {UL}/s'
 
     ###--------BUTTONS-------
-    PREVIOUS = '⫷'
-    REFRESH = 'ᴘᴀɢᴇs\n{Page}'
-    NEXT = '⫸'
+    PREVIOUS = '⬅️'
+    REFRESH = '{Page}'
+    NEXT = '➡️'
     # ---------------------
 
     #STOP_DUPLICATE_MSG: ---> clone.py, aria2_listener.py, task_manager.py
