@@ -132,8 +132,8 @@ class WZMLStyle:
 ------------------------------------------\n\n"""
     
     # async def __msg_to_reply(self): ---> pyrogramEngine.py
-    PM_START =            "➲ <b><u>Task Started :</u></b>\n┃\n┖ <b>Link:</b> <a href='{msg_link}'>Click Here</a>"
-    L_LOG_START =           "➲ <b><u>Leech Started :</u></b>\n┃\n┠ <b>User :</b> {mention} ( #ID{uid} )\n┖ <b>Source :</b> <a href='{msg_link}'>Click Here</a>"
+    PM_START =            "<b><u>Task Started :</u></b>\n\n<b>Link:</b> <a href='{msg_link}'>Click Here</a>"
+    L_LOG_START =           "<b><u>Leech Started :</u></b>\n\n<b>User :</b> {mention} ( #ID{uid} )\n<b>Source :</b> <a href='{msg_link}'>Click Here</a>"
 
     # async def onUploadComplete(): ---> tasks_listener.py
     NAME =                  '<b><u>{Name}</u></b>\n\n'
@@ -173,10 +173,10 @@ class WZMLStyle:
 
     # def get_readable_message(): ---> bot_utilis.py
     ####--------OVERALL MSG HEADER----------
-    STATUS_NAME =       '<b><u>{Name}</u></b>'
+    STATUS_NAME =       '<b><u>{Name}</u></b>\n'
 
     #####---------PROGRESSIVE STATUS-------
-    BAR =               '\n{Bar}'
+    BAR =               '\n<b>Bar:</b> {Bar}'
     PROCESSED =         '\n<b>Processed:</b> {Processed}'
     STATUS =            '\n<b>Status:</b> <a href="{Url}">{Status}</a>'
     ETA =               '\n<b>ETA:</b> {Eta}'
